@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-const Test = styled.div.withConfig({
+const Test = styled.img.withConfig({
   componentId: "sc-1289dod-0"
-})`width:100%;`;
+})`width:100%;height:10rem;`;
 const Test2 = true ? styled.div.withConfig({
   componentId: "sc-1289dod-1"
 })`` : styled.div.withConfig({
