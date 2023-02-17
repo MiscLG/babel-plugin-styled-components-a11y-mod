@@ -6,7 +6,6 @@ export default t => (path, state) => {
       tag: callee,
       quasi: { quasis, expressions },
     } = path.node
-
     const values = t.arrayExpression(
       quasis
         .filter(quasi => quasi.value.cooked !== undefined)

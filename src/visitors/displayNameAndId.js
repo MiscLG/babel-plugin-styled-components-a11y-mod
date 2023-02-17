@@ -230,6 +230,13 @@ export default t => (path, state) => {
       useDisplayName(state) &&
       getDisplayName(t)(path, useFileName(state) && state)
 
+    // TODO: add tag identification to a detector (or to the isStyled function)
+    const tag = path.node.tag?.property?.name;
+    if (tag==='img'){
+      console.log('Found an image');
+      // TODO: send console trace
+    }
+
     addConfig(t)(
       path,
       displayName && displayName.replace(/[^_a-zA-Z0-9-]/g, ''),

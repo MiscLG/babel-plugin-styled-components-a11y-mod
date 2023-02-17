@@ -28,6 +28,7 @@ export default function({ types: t }) {
         pureAnnotation(t)(path, state)
       },
       TaggedTemplateExpression(path, state) {
+        // console.log('Found Here')
         minify(t)(path, state)
         displayNameAndId(t)(path, state)
         templateLiterals(t)(path, state)
